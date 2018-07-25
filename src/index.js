@@ -5,7 +5,7 @@ import Rx from 'rxjs/Rx'
 import crypto from 'crypto'
 import constants from './constants'
 
-const WS_URL = 'wss://ws-ap1.pusher.com/app/a0dfa181b1248b929b11?protocol=7&client=js&version=4.1.0&flash=false'
+const WS_URL = constants.websocketUrl
 
 const MINIMUM_VOLUMES = {
   btcidr: {
@@ -204,7 +204,10 @@ class Indodax {
 
   getInfo() {
     return Indodax.sendVipTapiCommand(this.apiKey, this.apiSecret, 'getInfo')
-      .catch(err => Rx.Observable.throw(err))
+      .catch((err) => {
+        console.log(err.stack)
+        return Rx.Observable.throw(err)
+      })
   }
 
   getIdrBalance() {
