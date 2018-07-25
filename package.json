@@ -1,0 +1,48 @@
+{
+  "name": "indodax-rx",
+  "version": "0.1.0",
+  "description": "An RxJs ready client for Indodax",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "validate": "npm ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/playgame-global/indodax-rx.git"
+  },
+  "keywords": [
+    "indodax",
+    "rxjs",
+    "client"
+  ],
+  "author": "Batista Harahap",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/playgame-global/indodax-rx/issues"
+  },
+  "homepage": "https://github.com/playgame-global/indodax-rx#readme",
+  "dependencies": {
+    "rxjs": "^5.5.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.18.3",
+    "precommit-hook-eslint": "^3.0.0"
+  },
+  "pre-commit": [
+    "lint",
+    "validate"
+  ]
+}

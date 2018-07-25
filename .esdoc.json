@@ -1,0 +1,18 @@
+{
+  "source": "./src",
+  "destination": "./docs",
+  "plugins": [{
+    "name": "esdoc-standard-plugin",
+    "option": {
+      "lint": {"enable": false},
+      "coverage": {"enable": false},
+      "brand": {
+        "title": "Enjin",
+        "description": "The BEST Shipping API in Indonesia",
+        "repository": "https://github.com/coralhq/enjin",
+        "site": "https://cekongkir.id",
+        "author": "https://twitter.com/tista"
+      }
+    }
+  }]
+}
