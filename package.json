@@ -24,7 +24,10 @@
   },
   "homepage": "https://github.com/playgame-global/indodax-rx#readme",
   "dependencies": {
-    "rxjs": "^5.5.2"
+    "request": "^2.87.0",
+    "request-promise-native": "^1.0.5",
+    "rxjs": "^5.5.2",
+    "ws": "^6.0.0"
   },
   "devDependencies": {
     "apidoc": "^0.17.6",
